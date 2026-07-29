@@ -1,4 +1,4 @@
-# Polityka Prywatności – Rejestr Czasu Pracy
+# Polityka Prywatności – WorkTime - Czas Pracy
 
 Ostatnia aktualizacja: 29 lipca 2026 r.
 
