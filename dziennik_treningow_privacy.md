@@ -1,6 +1,6 @@
 # Polityka Prywatności – Dziennik treningów
 
-Ostatnia aktualizacja: 5 września 2026 r.
+Ostatnia aktualizacja: 4 października 2026 r.
 
 Aplikacja **Dziennik treningów** (zwana dalej „Aplikacją”), stworzona przez **Artur M**, szanuje prywatność swoich użytkowników. Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób Aplikacja traktuje Twoje dane.
 
@@ -10,18 +10,23 @@ Aplikacja **Dziennik treningów** (zwana dalej „Aplikacją”), stworzona prze
 - Aplikacja działa **w 100% w trybie offline**.
 - Aplikacja **nie zbiera**, **nie gromadzi**, **nie przesyła** ani **nie udostępnia** żadnych danych osobowych, informacji o urządzeniu, lokalizacji ani danych dotyczących użytkowania do żadnych zewnętrznych serwerów, dostawców usług, analityki czy chmury.
 - Aplikacja **nie posiada konta użytkownika ani logowania**.
-- Wszystkie wprowadzone dane (ćwiczenia, serie, dociążenie, notatki po treningu, a także ustawienia języka, jednostek i wyglądu) są zapisywane **wyłącznie lokalnie** w pamięci Twojego urządzenia.
+- Wszystkie wprowadzone dane (ćwiczenia, serie, dociążenie, notatki po treningu, a także ustawienia języka, jednostek, wyglądu i dźwięku timera) są zapisywane **wyłącznie lokalnie** w pamięci Twojego urządzenia.
 
 ---
 
 ## 2. Uprawnienia Aplikacji
-Aplikacja **nie prosi o żadne uprawnienia systemowe** — ani do pamięci, ani do lokalizacji, aparatu, mikrofonu, kontaktów czy powiadomień.
+Aplikacja **nie ma dostępu do internetu** i nie prosi o dostęp do pamięci, lokalizacji, aparatu, mikrofonu, kontaktów ani zdjęć. Korzysta wyłącznie z uprawnień potrzebnych timerowi oraz z systemowego menedżera plików:
 
-1. **Kopia zapasowa i wczytywanie danych (Menedżer Plików SAF)**:
+1. **Timer ćwiczeń (powiadomienia, wibracja, działanie w tle)**:
+   - **Powiadomienia** służą wyłącznie do pokazania odliczania timera na ekranie blokady. Możesz odmówić — timer nadal działa, tylko bez powiadomienia.
+   - **Wibracja** i **działanie przy zablokowanym ekranie** (usługa pierwszoplanowa i chwilowe utrzymanie procesora w gotowości) są używane tylko podczas odliczania, które sam uruchomisz, aby koniec przerwy lub serii dał sygnał na czas.
+   - Timer nie zapisuje ani nie wysyła żadnych danych poza urządzenie.
+
+2. **Kopia zapasowa i wczytywanie danych (Menedżer Plików SAF)**:
    - Zapis i odczyt kopii zapasowej w formacie JSON odbywa się przez **systemowy menedżer plików**, w którym samodzielnie wskazujesz folder lub plik.
    - Mechanizm ten z założenia nie wymaga przyznawania Aplikacji żadnych uprawnień do pamięci urządzenia.
 
-2. **Kopia zapasowa systemu Android**:
+3. **Kopia zapasowa systemu Android**:
    - Automatyczna kopia zapasowa systemu Android (Android Auto Backup) jest w Aplikacji **wyłączona**.
    - Oznacza to, że dane Aplikacji **nie są kopiowane na Dysk Google** ani w żadne inne miejsce poza Twoim urządzeniem.
 
