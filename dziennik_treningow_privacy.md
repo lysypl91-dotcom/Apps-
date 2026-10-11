@@ -1,6 +1,6 @@
 # Polityka Prywatności – Dziennik treningów
 
-Ostatnia aktualizacja: 4 października 2026 r.
+Ostatnia aktualizacja: 11 października 2026 r.
 
 Aplikacja **Dziennik treningów** (zwana dalej „Aplikacją”), stworzona przez **Artur M**, szanuje prywatność swoich użytkowników. Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób Aplikacja traktuje Twoje dane.
 
@@ -10,23 +10,31 @@ Aplikacja **Dziennik treningów** (zwana dalej „Aplikacją”), stworzona prze
 - Aplikacja działa **w 100% w trybie offline**.
 - Aplikacja **nie zbiera**, **nie gromadzi**, **nie przesyła** ani **nie udostępnia** żadnych danych osobowych, informacji o urządzeniu, lokalizacji ani danych dotyczących użytkowania do żadnych zewnętrznych serwerów, dostawców usług, analityki czy chmury.
 - Aplikacja **nie posiada konta użytkownika ani logowania**.
-- Wszystkie wprowadzone dane (ćwiczenia, serie, dociążenie, notatki po treningu, a także ustawienia języka, jednostek, wyglądu i dźwięku timera) są zapisywane **wyłącznie lokalnie** w pamięci Twojego urządzenia.
+- Wszystkie wprowadzone dane (ćwiczenia, serie, dociążenie, notatki po treningu, a także ustawienia języka, jednostek, wyglądu, dźwięku timera i przypomnień) są zapisywane **wyłącznie lokalnie** w pamięci Twojego urządzenia.
 
 ---
 
 ## 2. Uprawnienia Aplikacji
-Aplikacja **nie ma dostępu do internetu** i nie prosi o dostęp do pamięci, lokalizacji, aparatu, mikrofonu, kontaktów ani zdjęć. Korzysta wyłącznie z uprawnień potrzebnych timerowi oraz z systemowego menedżera plików:
+Aplikacja **nie ma dostępu do internetu** i nie prosi o dostęp do pamięci, lokalizacji, aparatu, mikrofonu, kontaktów ani zdjęć. Korzysta wyłącznie z uprawnień potrzebnych timerowi, lokalnym przypomnieniom oraz z systemowego menedżera plików:
 
 1. **Timer ćwiczeń (powiadomienia, wibracja, działanie w tle)**:
-   - **Powiadomienia** służą wyłącznie do pokazania odliczania timera na ekranie blokady. Możesz odmówić — timer nadal działa, tylko bez powiadomienia.
-   - **Wibracja** i **działanie przy zablokowanym ekranie** (usługa pierwszoplanowa i chwilowe utrzymanie procesora w gotowości) są używane tylko podczas odliczania, które sam uruchomisz, aby koniec przerwy lub serii dał sygnał na czas.
+   - **Powiadomienia** pokazują odliczanie timera oraz opcjonalne lokalne przypomnienia o uzupełnieniu dziennika, w dniach i godzinach wybranych przez użytkownika. Możesz odmówić — timer nadal działa, ale przypomnienia nie będą widoczne. Przypomnienia można w każdej chwili wyłączyć w edycji ćwiczenia.
+   - **Wibracja** sygnalizuje koniec odliczania timera. Przypomnienia mogą wydawać dźwięk i wibrować zgodnie z ustawieniami powiadomień Androida, które zmieniasz samodzielnie (w Aplikacji: Ustawienia → Przypomnienia → „Dźwięk i wibracja”). Aplikacja nie zmienia tych ustawień ani nie omija wyciszenia telefonu.
+   - **Działanie przy zablokowanym ekranie** (usługa pierwszoplanowa i chwilowe utrzymanie procesora w gotowości) jest używane tylko podczas odliczania, które sam uruchomisz, aby koniec przerwy lub serii dał sygnał na czas.
    - Timer nie zapisuje ani nie wysyła żadnych danych poza urządzenie.
 
-2. **Kopia zapasowa i wczytywanie danych (Menedżer Plików SAF)**:
+2. **Lokalne przypomnienia**:
+   - Każde ćwiczenie może mieć kilka terminów z własną nazwą, dniami i godziną oraz opcją pomijania po wcześniejszym wpisie. Te ustawienia pozostają na urządzeniu.
+   - Ustawienia i lokalna informacja o odhaczonych ćwiczeniach służą do planowania powiadomień i pomijania już zapisanego wykonania. Nie opuszczają urządzenia.
+   - Po restarcie telefonu Aplikacja odtwarza włączone przypomnienia (uprawnienie `RECEIVE_BOOT_COMPLETED`). Nie uruchamia przy tym timera ani ciągłej usługi.
+   - Android może opóźnić przypomnienie ze względu na oszczędzanie baterii. Samo powiadomienie nie zapisuje wykonania ćwiczenia.
+   - Przycisk „Wyślij próbne powiadomienie” pokazuje od razu jedno lokalne powiadomienie. Nie zmienia przypomnień ani wyników i niczego nie wysyła poza urządzenie.
+
+3. **Kopia zapasowa i wczytywanie danych (Menedżer Plików SAF)**:
    - Zapis i odczyt kopii zapasowej w formacie JSON odbywa się przez **systemowy menedżer plików**, w którym samodzielnie wskazujesz folder lub plik.
    - Mechanizm ten z założenia nie wymaga przyznawania Aplikacji żadnych uprawnień do pamięci urządzenia.
 
-3. **Kopia zapasowa systemu Android**:
+4. **Kopia zapasowa systemu Android**:
    - Automatyczna kopia zapasowa systemu Android (Android Auto Backup) jest w Aplikacji **wyłączona**.
    - Oznacza to, że dane Aplikacji **nie są kopiowane na Dysk Google** ani w żadne inne miejsce poza Twoim urządzeniem.
 
